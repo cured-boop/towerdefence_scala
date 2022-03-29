@@ -4,3 +4,8 @@ Kiirettä on ollut todella paljon lähiaikoina ja aikataulu on syrjinyt tätä k
 keskittyä ja tehdä enemmän muita projekteja valmiiksi. Pääajattelutapa on siis, että jaan työmäärää niin, että teen tätä projektia jossain kohtaa
 enemmän pienemmällä aikavälillä ja keskittyminen ei katkea projektin suhteen vaan saan sen edistymään yhtenäisesti isolla työmäärällä.
 __________________________________________________________________________________________________________________________________________________
+29.03.2022
+Päivitetty torniluokkaan alustavat rakenteet torneille mukaanlukien hinnat ja hyökkäyksen tyyppi. Luokka Overall lisätty kuvaamaan pelin sen hetkistä
+tilannetta (hyödyllinen käyttöliittymälle). Level luokkaan luotu enemmän sisältöä ajatuksella helpottamaan alustaa, josta olisi tarkoitus lähtemään
+luomaan käyttöliittymää. (Työmäärä jäänyt taas hieman vähäiseksi sairauden takia)
+__________________________________________________________________________________________________________________________________________________
