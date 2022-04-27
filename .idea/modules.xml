@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AT_TowerDfense.iml" filepath="$PROJECT_DIR$/.idea/modules/AT_TowerDfense.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AT_TowerDfense-build.iml" filepath="$PROJECT_DIR$/.idea/modules/AT_TowerDfense-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Beverage_Tower_Defense.iml" filepath="$PROJECT_DIR$/.idea/modules/Beverage_Tower_Defense.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Beverage_Tower_Defense-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Beverage_Tower_Defense-build.iml" />
     </modules>
   </component>
 </project>

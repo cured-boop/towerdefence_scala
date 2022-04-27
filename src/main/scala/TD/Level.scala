@@ -1,6 +1,33 @@
 package TD
+import scala.swing.Point
+
+class Level(private val layout: Vector[Vector[Int]], val width: Int = 1000, val height: Int = 1000) {
+  def get = layout
+  val road = {
+    var end = 1
+    var road = Array[Pos]()
+    layout.zipWithIndex.foreach(a => {
+      val row = a._1
+      val index = a._2
+      val spot = row.zipWithIndex.filter(b => b._1 == 1).map(c => new Pos(c._2 + 1, index +1 ))
+      if (spot.nonEmpty) {
+        road = road ++ (if (spot(0).x == end) spot else spot.reverse)
+        end = spot.last.x
+      }
+    })
+      road
+  }
+  def pointOnRoad(cursor: Point) = {
+    val test = road.map(spot => new Pos((spot.x - 1) * Numbers.tiwi, (spot.y - 1) * Numbers.tihe)).find(spot => cursor.x > spot.x && cursor.x < spot.x + Numbers.tiwi && cursor.y > spot.y && cursor.y < spot.y + Numbers.tihe)
+    test.isEmpty
+  }
+  def oob(cursor: Point) = cursor.x < 0 || cursor.x > Numbers.width || cursor.y < 0 || cursor.y > Numbers.height
+
+}
 
 
+
+/*
 // vapaamuotoinen tasoa kuvaava nelikulmio
 trait Rectangle[A] {
   def y(a: A): Int
@@ -68,3 +95,5 @@ case class Level(width: Int, height: Int, tiles: Map[Pos, Tile], towers: Map[Pos
     def height(implicit r: Rectangle[Level]) = r.height(level)
     }
   }
+
+ */

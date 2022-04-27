@@ -9,3 +9,19 @@ Päivitetty torniluokkaan alustavat rakenteet torneille mukaanlukien hinnat ja h
 tilannetta (hyödyllinen käyttöliittymälle). Level luokkaan luotu enemmän sisältöä ajatuksella helpottamaan alustaa, josta olisi tarkoitus lähtemään
 luomaan käyttöliittymää. (Työmäärä jäänyt taas hieman vähäiseksi sairauden takia)
 __________________________________________________________________________________________________________________________________________________
+22.4.2022
+Paljon leikkimistä graafisella liittymällä Swingin ja ScalaFX osalta. Ei mitään konkreettista näyttöä vain vihollisia, jotka kulkevat polkua pitkin ja
+torneja, jotka ovat paikallaan.
+__________________________________________________________________________________________________________________________________________________
+23.4.2022
+Iso osa "nukettu" ja uudelta pohjalta alettu työstämään hieman monimutkaisempaa peliä. Runko hyvässä vaiheessa, melkein valmis.
+Bugeja löytyy graafisen liittymän kanssa.
+__________________________________________________________________________________________________________________________________________________
+25.4.2022
+Bugien korjaamiseen käytetty paljon aikaa. Swingillä omien kuvien käyttö sen verran hankalaa, että suunnitelmien vaihto valmiin kirjastoiden käyttöön.
+__________________________________________________________________________________________________________________________________________________
+26.4.2022
+Iso bugi vielä vihollisten kulkureitin kanssa. Ei korjattu.
+__________________________________________________________________________________________________________________________________________________
+27.04.2022
+Bugi löytyi ja korjattu. Ohjelma viimeistelty palautukseen

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="AT_TowerDfense" />
+    <profile name="sbt 1" modules="AT_TowerDfense,Beverage_Tower_Defense" />
   </component>
 </project>

@@ -1,5 +1,0 @@
-package TD
-
-class GUI {
-???
-}
