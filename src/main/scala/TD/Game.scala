@@ -94,13 +94,13 @@ class Game() {
   }
   def engage() = {
     val beginning = level.road(0)
-    val roadLength = level.road.map(a => a.x * Numbers.tiwi).sum
+    val roadLength = level.road.map(a => a.x * Numbers.tileWidth).sum
     enemiesBuffer.zipWithIndex.foreach(a => {
       val enemy = a._1
       val distance = 50
       val toDir = this.toDirection(enemy)
-      if (toDir == Direction.right)  enemy.move((-a._2 * 6) - distance, ((beginning.y - 1) * Numbers.tihe) + (Numbers.tihe/2))
-      else if (toDir == Direction.down) enemy.move(((beginning.x -1) * Numbers.tiwi) + (Numbers.tiwi/2), (-a._2 * 6) - distance)
+      if (toDir == Direction.right)  enemy.move((-a._2 * 6) - distance, ((beginning.y - 1) * Numbers.tileHeight) + (Numbers.tileHeight/2))
+      else if (toDir == Direction.down) enemy.move(((beginning.x -1) * Numbers.tileWidth) + (Numbers.tileWidth/2), (-a._2 * 6) - distance)
       enemy.toDirection = toDir
       enemy.toFinish = roadLength + ((a._2 * 6) + distance)
     })
@@ -126,14 +126,14 @@ class Game() {
         val next = level.road(enemy.onRoad + 1)
         val X = enemy.pos.x
         val Y = enemy.pos.y
-        if (((X > ((now.x * Numbers.tiwi) - (Numbers.tiwi/2))) && enemy.toDirection == Direction.right) || ((X < ((now.x * Numbers.tiwi) - Numbers.tiwi/2)) && enemy.toDirection == Direction.left)) {
+        if (((X > ((now.x * Numbers.tileWidth) - (Numbers.tileWidth/2))) && enemy.toDirection == Direction.right) || ((X < ((now.x * Numbers.tileWidth) - Numbers.tileWidth/2)) && enemy.toDirection == Direction.left)) {
           if (next.y == now.y) "brple"
           else {
           if (next.y - now.y == 1) enemy.toDirection = Direction.down
           else enemy.toDirection = Direction.up
           }
           enemy.onRoad += 1
-        } else if (((Y > ((now.y * Numbers.tihe) - (Numbers.tihe/2))) && enemy.toDirection == Direction.down) || ((Y < ((now.y * Numbers.tihe) - Numbers.tihe/2)) && enemy.toDirection == Direction.up)) {
+        } else if (((Y > ((now.y * Numbers.tileHeight) - (Numbers.tileHeight/2))) && enemy.toDirection == Direction.down) || ((Y < ((now.y * Numbers.tileHeight) - Numbers.tileHeight/2)) && enemy.toDirection == Direction.up)) {
           if (next.x == now.x) {
             new Pos(0, next.y - now.y)
           } else {

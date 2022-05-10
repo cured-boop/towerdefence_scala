@@ -10,11 +10,11 @@ object Level  {
     level.foreach(a => {
       a.foreach(b => {
         g.setColor(if (b == 0) Color.GRAY  else Color.GREEN)
-        g.fillRect(x, y, Numbers.tiwi, Numbers.tihe)
-        x += Numbers.tiwi
+        g.fillRect(x, y, Numbers.tileWidth, Numbers.tileHeight)
+        x += Numbers.tileWidth
       })
       x = 0
-      y += Numbers.tihe
+      y += Numbers.tileHeight
     })
   }
 }
